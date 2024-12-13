@@ -13,7 +13,7 @@ public class Obstacle : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.name == "Agus") //Agus
         {
             Debug.Log("Player hit obstacle");
             playerMovement.Die();
