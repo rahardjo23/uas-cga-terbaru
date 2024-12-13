@@ -7,6 +7,7 @@ public class ScoreManager : MonoBehaviour
     public float scoreIncreaseRate = 20f; // Score increment per second
     private float score = 0f;
     private bool isPlayerAlive = true; // Made public for debugging
+    private bool isGameOver = false;
 
     void Update()
     {
@@ -26,6 +27,13 @@ public class ScoreManager : MonoBehaviour
     {
         Debug.Log("PlayerDied method called");
         isPlayerAlive = false;
+        isGameOver = true;
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
+        isGameOver = false;
     }
 
 }
