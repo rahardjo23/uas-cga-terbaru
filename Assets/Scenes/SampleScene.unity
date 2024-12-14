@@ -292,7 +292,7 @@ MonoBehaviour:
   scoreManager: {fileID: 825488305}
   gameOverPanel: {fileID: 953549726}
   horizontalMultiplier: 2
-  jumpForce: 500
+  jumpForce: 600
   groundMask:
     serializedVersion: 2
     m_Bits: 64

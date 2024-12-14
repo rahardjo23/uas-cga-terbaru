@@ -542,12 +542,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e8349fc8e100b0498aa829e4fde93e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 15
   rb: {fileID: 813673478}
   scoreManager: {fileID: 0}
   gameOverPanel: {fileID: 0}
   horizontalMultiplier: 2
-  jumpForce: 500
+  jumpForce: 600
   groundMask:
     serializedVersion: 2
     m_Bits: 64
