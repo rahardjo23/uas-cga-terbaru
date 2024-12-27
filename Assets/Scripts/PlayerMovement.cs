@@ -88,4 +88,12 @@ public class PlayerMovement : MonoBehaviour
     {
         canJump = true; // Aktifkan kembali kemampuan lompat
     }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.transform.tag == "Obstacle")
+        {
+            PlayerManager.gameOver = true;
+        }
+    }
 }
