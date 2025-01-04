@@ -24,7 +24,8 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
         Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
-        rb.MovePosition(rb.position + forwardMove + horizontalMove);
+        float clampedX = Mathf.Clamp(rb.position.x + horizontalMove.x, -4f, 4f); // Sesuaikan nilai -4f dan 4f dengan lebar area
+        rb.MovePosition(new Vector3(clampedX, rb.position.y, rb.position.z + forwardMove.z));
     }
 
     // Update is called once per frame
